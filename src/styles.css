@@ -1,90 +1,81 @@
 * {
   box-sizing: border-box;
+  font-size: calc(16px + 0.390625vw);
 }
 
 body {
-  font-family: sans-serif;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin: 20px;
   padding: 0;
+  background-color: rgba(25,42,50,255);
 }
 
-h1 {
-  margin-top: 0;
-  font-size: 22px;
+.game{
+  margin-left: 35%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
 }
 
-h2 {
-  margin-top: 0;
-  font-size: 20px;
-}
-
-h3 {
-  margin-top: 0;
-  font-size: 18px;
-}
-
-h4 {
-  margin-top: 0;
-  font-size: 16px;
-}
-
-h5 {
-  margin-top: 0;
-  font-size: 14px;
-}
-
-h6 {
-  margin-top: 0;
-  font-size: 12px;
-}
-
-code {
-  font-size: 1.2em;
-}
-
-ul {
-  padding-inline-start: 20px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
+.status{
+  font-size: 50px;
+  color: rgba(168,190,201,255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
+  background:rgba(31,53,64,255) ;
+  font-size: 60px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
+  height: 150px;
+  width: 150px;
+  border-radius: 20%;
+  border-color: rgba(168,190,201,255);
+  column-gap: 1%;
 }
 
-.board-row:after {
-  clear: both;
-  content: '';
-  display: table;
+.board-row{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 5%;
 }
 
-.status {
-  margin-bottom: 10px;
-}
 .game {
   display: flex;
   flex-direction: row;
+  height: 50%;
+  width: 50%;
 }
 
 .game-info {
-  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 30%;
 }
+
+li{
+  list-style-type: none;
+  margin: 10%;
+}
+
+.button{
+  border-radius: 10%;
+  background-color: rgba(168,190,201,255);
+  font-size: 70%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+  color:rgba(25,42,50,255)
+;
+}
+
+ol{
+  margin:0%;
+}
+
+
