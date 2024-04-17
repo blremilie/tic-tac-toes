@@ -1,11 +1,20 @@
 import { useState } from 'react';
 
 function Square({ value, onSquareClick }) {
-  return (
-    <button className="square" onClick={onSquareClick}>
-      {value}
-    </button>
-  );
+    let textColor;
+    if (value === 'O') {
+      textColor = 'rgba(242,178,55,255)';
+    } else if (value === 'X') {
+      textColor = 'rgba(168,190,201,255)';
+    } else {
+      textColor = 'black';
+    }
+  
+    return (
+      <button className="square" onClick={onSquareClick} style={{ color: textColor }}>
+        {value}
+      </button>
+    );
 }
 
 function Board({ xIsNext, squares, onPlay }) {
@@ -77,7 +86,7 @@ export default function Game() {
     }
     return (
       <li key={move}>
-        <button onClick={() => jumpTo(move)}>{description}</button>
+        <button className= "button" onClick={() => jumpTo(move)}>{description}</button>
       </li>
     );
   });
